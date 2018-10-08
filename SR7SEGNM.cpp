@@ -11,7 +11,19 @@
 
 #include <SR7SEGNM.h>
 
-
+const byte SR7SEGNM::segChar[]={
+		0b00111111,
+  		0b00000110,
+  		0b01011011,
+  		0b01001111,
+  		0b01100110,
+  		0b01101101,
+  		0b01111101,
+	  	0b00000111,
+  		0b01111111,
+  		0b01101111,
+	  	0b00000000
+	};
 SR7SEGNM::SR7SEGNM(int clkPin,int dtPin,int strbPin,int nSegments){
 
 	clockPin=clkPin;
